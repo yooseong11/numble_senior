@@ -35,7 +35,15 @@ module.exports = {
       'blue-100': '#B1E7EB',
       'purple':'7761C9'
     },
-    extend: {},
+    fontFamily: {
+      'MICEGothc': ['MICEGothic', 'serif'],
+      'roboto': ['roboto', 'serif'],
+    },
+    extend: {
+      borderRadius: {
+        '4xl': '3.125rem' /* 50px */
+      }
+    },
   },
   plugins: [],
 }
