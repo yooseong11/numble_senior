@@ -18,13 +18,13 @@ code {
 
 @font-face {
   font-family: 'MICEGothic';
-  src: url('fonts/MICEGothic.woff'), format('woff');
+  src: url('fonts/MICEGothic.woff');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'MICEGothic';
-  src: url('fonts/MICEGothic-Bold.woff'), format('woff');
+  src: url('fonts/MICEGothic-Bold.woff');
   font-weight: 700;
 }
 
