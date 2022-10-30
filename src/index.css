@@ -15,3 +15,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'MICEGothic';
+  src: url('fonts/MICEGothic.woff'), format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'MICEGothic';
+  src: url('fonts/MICEGothic-Bold.woff'), format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/Roboto-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/Roboto-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/Roboto-Bold.ttf');
+  font-weight: 700;
+}
