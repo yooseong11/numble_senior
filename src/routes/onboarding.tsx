@@ -14,7 +14,7 @@ const onboarding = () => {
     const nextPageParam = paramsNumber + 1
     if (nextPageParam > dataDummy.length) {
       alert('마지막 페이지입니다.')
-      return;
+      return
     }
     navigate(`/onboarding/${paramsNumber + 1}`)
   }
@@ -29,16 +29,11 @@ const onboarding = () => {
           <Pagination size={6} activeNumber={paramsNumber} />
         </div>
         <div className='text-center font-MICEGothc'>
-          <h2 className='text-2xl font-bold pb-2'>{dataDummy[paramsNumber-1].title}</h2>
-          <p>{dataDummy[paramsNumber-1].content}</p>
+          <h2 className='text-3xl pb-2'>{dataDummy[paramsNumber - 1].title}</h2>
+          <p>{dataDummy[paramsNumber - 1].content}</p>
         </div>
-        <Onboarding1 />
-        <div>
-          <NextButton
-            active={true}
-            onClick={goNextPage}
-          />
-        </div>
+        {dataDummy[paramsNumber - 1].animate}
+        <NextButton active={true} onClick={goNextPage} />
       </main>
     </>
   )
