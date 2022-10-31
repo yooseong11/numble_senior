@@ -29,19 +29,15 @@ code {
 }
 
 @font-face {
-  font-family: 'roboto';
-  src: url('fonts/Roboto-Regular.ttf');
+  font-family: 'Noto Sans KR';
+  font-style: normal;
   font-weight: 400;
+  src: url('fonts/NotoSansKR-Regular.otf');
 }
 
 @font-face {
-  font-family: 'roboto';
-  src: url('fonts/Roboto-Medium.ttf');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'roboto';
-  src: url('fonts/Roboto-Bold.ttf');
+  font-family: 'Noto Sans KR';
+  font-style: normal;
   font-weight: 700;
+  src: url('fonts/NotoSansKR-Bold.otf');
 }
