@@ -19,6 +19,7 @@ module.exports = {
       'gray-600': '#413F3F',
       'gray-500': '#5A5D63',
       'gray-400': '#8D939D',
+      'gray-350': '#DEE1E4',
       'gray-300': '#EBEEF0',
       'gray-200': '#F6F7F8',
       'gray-100': '#F8F8F9',
@@ -38,7 +39,7 @@ module.exports = {
     },
     fontFamily: {
       MICEGothc: ['MICEGothic', 'serif'],
-      roboto: ['roboto', 'serif'],
+      NotoSans: ['Noto Sans KR', 'sans-serif'],
     },
     extend: {
       borderRadius: {
