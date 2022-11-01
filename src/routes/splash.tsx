@@ -20,7 +20,7 @@ const splash = () => {
         </p>
         <p className='text-2xl'>평생 금융파트너</p>
       </div>
-      <img className='pt-14 w-60' src={splashImg} title='splashimg' />
+      <img className='pt-14 w-60' src={splashImg} title='kb국민은행' />
       <h1>
         <img className='w-44 pt-14 animate-pulse' src={kbImg} title='kb국민은행' />
       </h1>

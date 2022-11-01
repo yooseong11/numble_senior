@@ -4,16 +4,14 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 @font-face {
@@ -76,10 +74,58 @@ code {
 }
 
 .slideLeft1 {
-  animation: slideLeft .5s ease ;
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
 }
+
 .slideLeft2 {
-  animation: slideLeft .5s ease .5s;
+  animation-name: slideLeft2;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideLeft2 {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-60%);
+  }
+}
+
+.scaleUp1 {
+  animation-name: scaleUp;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+.scaleDown {
+  animation-name: scaleDown;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes scaleDown {
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes scaleUp {
+  100% {
+    transform: scale(1.1);
+    filter: drop-shadow(3px 4px 11px #B1ACA3);
+  }
 }
 
 @keyframes slideLeft {
@@ -88,22 +134,23 @@ code {
   }
 
   100% {
-    transform: translateX(0%);
+    transform: translateX(2%);
   }
 }
 
-
 .slideRight1 {
   animation-name: slideRight;
-  animation-duration: .5s;
+  animation-duration: 1s;
   animation-timing-function: ease;
+  animation-fill-mode: both;
 }
 
 .slideRight2 {
   animation-name: slideRight;
-  animation-duration: .5s;
+  animation-duration: 1s;
   animation-timing-function: ease;
   animation-delay: 1s;
+  animation-fill-mode: both;
 }
 
 @keyframes slideRight {
@@ -112,6 +159,162 @@ code {
   }
 
   100% {
-    transform: translateX(0%);
+    transform: translateX(2%);
+  }
+}
+
+.animate-onboarding1 {
+  animation-name: onboarding1;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes onboarding1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.2) translateX(40%);
+  }
+}
+
+.animate-popUp1 {
+  animation-name: visible;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+.animate-popUp2 {
+  animation-name: visible;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+
+.animate-popUp3 {
+  animation-name: visible;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+
+.animate-blink {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-delay: 2.5s;
+}
+
+.animate-hidden {
+  animation-name: hidden;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: .5s;
+  animation-iteration-count: both;
+  animation-fill-mode: forwards;
+}
+@keyframes hidden {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}
+
+.animate-darker {
+  animation-name: darker;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+
+@keyframes darker {
+  100% {
+    filter: brightness(0.5);
+  }
+}
+
+.animate-slideUp {
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropShadow-custom {
+  filter: drop-shadow(0px 0px 16px rgba(92, 80, 77, 0.16));
+}
+
+.animate-goLeft {
+  animation-name: goLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+.animate-goLeft1 {
+  animation-name: goLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+
+@keyframes goLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
 }

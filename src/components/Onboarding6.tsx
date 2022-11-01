@@ -1,17 +1,44 @@
-import Img1 from '../image/onboarding_6_1.webp'
+import CellPhoneImage from '../image/onboarding_6_1.webp'
 import Img2 from '../image/onboarding_6_2.webp'
 import Img3 from '../image/onboarding_6_3.webp'
 import Img4 from '../image/onboarding_6_4.webp'
+import Image from './Image'
 
 const Onboarding3 = () => {
-	return (
+  return (
     <div className='relative'>
-      <img src={Img1} alt='img' className='m-auto' />
-      <img src={Img2} alt='img' className='absolute bottom-0 p-6 right-1/2 translate-x-1/2 animate-pulse' />
-      <img src={Img3} alt='img' className='absolute bottom-0 p-6 right-1/2 translate-x-1/2 animate-pulse' />
-      <img src={Img4} alt='img' className='absolute bottom-0 p-6 right-1/2 translate-x-1/2 animate-pulse' />
+      <Image
+        src={CellPhoneImage}
+        width={290}
+        height={500}
+        alt='CellPhoneImage'
+        className='m-auto'
+      />
+      <div className='absolute right-1/2 translate-x-1/2 bottom-36 z-10 w-[220px] h-[60px] px-4'>
+        <Image
+          src={Img2}
+          width={180}
+          height={24}
+          alt='img'
+          className='p-2 right-1/2 animate-popUp1'
+        />
+        <Image
+          src={Img3}
+          width={180}
+          height={18}
+          alt='img'
+          className='p-2 right-[8.5rem] animate-popUp3 delay-200'
+        />
+        <Image
+          src={Img4}
+          width={160}
+          height={18}
+          alt='img'
+          className='p-2 right-1/2 animate-popUp2'
+        />
+      </div>
     </div>
-	)
+  )
 }
 
 export default Onboarding3

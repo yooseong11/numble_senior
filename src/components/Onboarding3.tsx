@@ -1,11 +1,12 @@
-import Img1 from '../image/onboarding_3_1.webp'
-import Img2 from '../image/onboarding_3_2.webp'
+import CellPhoneImage from '../image/onboarding_3_1.webp'
+import slideUpImg from '../image/onboarding_3_2.webp'
+import Image from './Image'
 
 const Onboarding3 = () => {
 	return (
     <div className='relative'>
-      <img src={Img1} alt='img' className='m-auto' />
-      <img src={Img2} alt='img' className='absolute bottom-0 p-6 right-1/2 translate-x-1/2' />
+      <Image width={290} height={500}  src={CellPhoneImage} alt='img' className='m-auto animate-darker'  />
+      <Image width={235} height={100}  src={slideUpImg} alt='img' className='absolute bottom-8 ml-7 animate-slideUp' />
     </div>
 	)
 }
