@@ -7,11 +7,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 const App = lazy(() => import('./App'))
 const Onboarding = lazy(() => import('./routes/onboarding'))
 const Splash = lazy(() => import('./routes/splash'))
+const ErrorPage = lazy(() => import('./routes/error'))
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/onboarding/:id',
