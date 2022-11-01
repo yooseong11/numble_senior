@@ -1,7 +1,7 @@
-import Img1 from '../image/onboarding_6_1.png'
-import Img2 from '../image/onboarding_6_2.png'
-import Img3 from '../image/onboarding_6_3.png'
-import Img4 from '../image/onboarding_6_4.png'
+import Img1 from '../image/onboarding_6_1.webp'
+import Img2 from '../image/onboarding_6_2.webp'
+import Img3 from '../image/onboarding_6_3.webp'
+import Img4 from '../image/onboarding_6_4.webp'
 
 const Onboarding3 = () => {
 	return (

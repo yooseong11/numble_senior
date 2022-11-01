@@ -1,5 +1,5 @@
-import Img1 from '../image/onboarding_1_1.png'
-import Img2 from '../image/onboarding_1_2.png'
+import Img1 from '../image/onboarding_1_1.webp'
+import Img2 from '../image/onboarding_1_2.webp'
 
 const Onboarding1 = () => {
   return (

@@ -1,5 +1,5 @@
-import splashImg from '../image/splash.png'
-import kbImg from '../image/kb.png'
+import splashImg from '../image/splash.webp'
+import kbImg from '../image/kb.webp'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 

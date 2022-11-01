@@ -1,6 +1,5 @@
-import header from '../image/header.png'
+import header from '../image/header.webp'
 import dataDummy from '../onboardingDummyData'
-import Onboarding1 from '../components/Onboarding1'
 import { useNavigate, useParams } from 'react-router-dom'
 import Pagination from '../components/Pagination'
 import NextButton from '../components/NextButton'
@@ -24,7 +23,7 @@ const onboarding = () => {
       <header>
         <img src={header} />
       </header>
-      <main className='flex flex-col justify-between h-full'>
+      <main className='flex flex-col justify-between h-full items-center'>
         <div className='px-4 py-4 flex justify-center'>
           <Pagination size={6} activeNumber={paramsNumber} />
         </div>
