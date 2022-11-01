@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-const App = React.lazy(() => import('./App'))
-const Onboarding = React.lazy(() => import('./routes/onboarding'))
-const Splash = React.lazy(() => import('./routes/splash'))
+const App = lazy(() => import('./App'))
+const Onboarding = lazy(() => import('./routes/onboarding'))
+const Splash = lazy(() => import('./routes/splash'))
 
 const router = createBrowserRouter([
   {
