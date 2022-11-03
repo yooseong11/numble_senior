@@ -20,21 +20,21 @@ const Onboarding3 = () => {
           width={180}
           height={24}
           alt='img'
-          className='p-2 right-1/2 animate-popUp1'
+          className='p-2 right-1/2 animate-popUp'
         />
         <Image
           src={Img3}
           width={180}
           height={18}
           alt='img'
-          className='p-2 right-[8.5rem] animate-popUp3 delay-200'
+          className='p-2 right-[8.5rem] animate-popUp-delay1s'
         />
         <Image
           src={Img4}
           width={160}
           height={18}
           alt='img'
-          className='p-2 right-1/2 animate-popUp2'
+          className='p-2 right-1/2 animate-popUp-delay0.5s'
         />
       </div>
     </div>

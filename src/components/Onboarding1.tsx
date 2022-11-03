@@ -28,16 +28,16 @@ const Onboarding1 = () => {
           }}
         />
       </div>
-      <div className='absolute top-[17.5rem] z-10'>
+      <div className='absolute flex top-[17.5rem] z-10 p-0'>
         <BlinkAnimation />
+        <Image
+          src={bankImg}
+          alt='img'
+          className='drop-shadow-lg animate-scaleUp-delay2s mr-6'
+          width={240}
+          height={80}
+        />
       </div>
-      <Image
-        src={bankImg}
-        alt='img'
-        className='absolute top-72 right-1/2 translate-x-1/2 drop-shadow-lg animate-onboarding1 transition-all'
-        width={240}
-        height={80}
-      />
     </div>
   )
 }

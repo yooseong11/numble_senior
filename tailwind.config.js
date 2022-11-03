@@ -45,6 +45,69 @@ module.exports = {
       borderRadius: {
         '4xl': '3.125rem' /* 50px */,
       },
+      dropShadow: {
+        card: '0px 0px 16px rgba(92, 80, 77, 0.16)'
+      },
+      animation: {
+        blink: 'blink 1.5s 2.5s ease infinite',
+        darker: 'darker 1s 1s ease both',
+        hidden: 'hidden 1s .5s ease forwards',
+        slideUp: 'slideUp 1s 1s ease both',
+        scaleDown: 'scaleDown 2s .5s ease both',
+        scaleUp: 'scaleUp 1s 1s ease both',
+        'scaleUp-delay2s': 'scaleUp 1s 2s ease both',
+        popUp: 'visible .5s ease both',
+        'popUp-delay0.5s': 'visible .5s .5s ease both',
+        'popUp-delay1s': 'visible .5s 1s ease both',
+        slideRight: 'slideRight 1s ease both',
+        'slideRight-delay1s': 'slideRight 1s 1s ease both',
+        'slideLeft-delay0.5s': 'slideLeft 1s .5s ease both',
+        'carouselSlideLeft': 'CarouselSlideLeft  2s .5s ease both'
+      },
+      keyframes: {
+        darker: {
+          '100%': { filter: 'brightness(0.5)' },
+        },
+        slideUp: {
+          '0%': { opacity: 0, transform: 'translateY(30%)' },
+          '100%': {opacity: 1, transform: 'translateY(0)' },
+        },
+        slideLeft: {
+          '0%': { opacity: 0, transform: 'translateX(30%)' },
+          '100%': {opacity: 1,  transform: 'translateX(0)' },
+        },
+        slideRight: {
+          '0%': { opacity: 0, transform: 'translateX(-30%)' },
+          '100%': {opacity: 1, transform: 'translateX(0)' },
+        },
+        scaleDown: {
+          '100%' : {transform: 'scale(0.9)'}
+        },
+        scaleUp: {
+          '100%': {transform: 'scale(1.1)', filter: 'drop-shadow(3px 4px 11px #B1ACA3)'}
+        },
+        hidden: {
+          '0%': { opacity: 1},
+          '100%': {opacity: 0},
+        },
+        visible: {
+          '0%': { opacity: 0},
+          '100%': {opacity: 1},
+        },
+        blink: {
+          '0%': { opacity: 0},
+          '50%': {opacity: 1},
+          '100%': {opacity: 0},
+        },
+        Carousel: {
+          '0%': { opacity: 1, transform: 'translateX(100%)' },
+          '100%': {opacity: 0, transform: 'translateX(-100%)' },
+        },
+        CarouselSlideLeft: {
+          '0%': {  transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-60%)' },
+        }
+      },
     },
   },
   plugins: [],
