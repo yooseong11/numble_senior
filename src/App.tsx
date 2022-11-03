@@ -11,9 +11,9 @@ function App() {
   }
 
   return (
-    <div className='App bg-gray-400 h-screen'>
+    <div className='App h-screen bg-brown-100 '>
       <div className='flex justify-center items-center'>
-        <div id='screen' className=' bg-white h-[760px] w-[22.5rem] mt-4 relative'>
+        <div id='screen' className=' bg-white h-[760px] w-[22.5rem] relative rounded-lg shadow-2xl overflow-hidden'>
           <Suspense fallback={<Spinner />}>
             <Outlet />
           </Suspense>
