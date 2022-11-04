@@ -16,9 +16,15 @@ const Onboarding3 = () => {
       />
       <div className='carousel absolute bottom-1/2 translate-y-1/2'>
         <div className='flex animate-carouselSlideLeft p-8 '>
-          <Image src={Img2} alt='img' width={190} height={355} className='ml-8 mr-8 scale-110 animate-scaleDown' />
-          <Image src={Img4} alt='img' width={190} height={355} className='mr-8 animate-scaleUp' />
-          <Image src={Img3} alt='img' width={190} height={355} className='mr-8' />
+          <Image
+            src={Img2}
+            alt='img'
+            width={190}
+            height={270}
+            className='ml-8 mr-8 scale-110 animate-scaleDown'
+          />
+          <Image src={Img4} alt='img' width={190} height={270} className='mr-8 animate-scaleUp' />
+          <Image src={Img3} alt='img' width={190} height={270} className='mr-8' />
         </div>
       </div>
     </div>

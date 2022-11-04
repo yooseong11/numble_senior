@@ -4,14 +4,21 @@ import BlinkAnimation from './BlinkAnimation'
 import Image from './Image'
 
 const Onboarding2 = () => {
-	return (
-		<div className='relative'>
-      <Image width={290} height={500}  src={slideUpImg} alt='img' className='pt-12 delay animate-hidden' />
-			<div className='absolute top-32 left-12 z-10'><BlinkAnimation /></div>
-			<Image width={290} height={500} src={CellPhoneImage} alt='img' className='absolute top-0 animate-slideUp' />
-			
+  return (
+    <div className='relative'>
+      <Image
+        width={290}
+        height={500}
+        src={slideUpImg}
+        alt='img'
+        className='absolute pt-12 delay animate-hidden'
+      />
+      <div className='absolute top-32 left-12 z-10'>
+        <BlinkAnimation />
+      </div>
+      <Image width={290} height={500} src={CellPhoneImage} alt='img' className='animate-slideUp' />
     </div>
-	)
+  )
 }
 
 export default Onboarding2
