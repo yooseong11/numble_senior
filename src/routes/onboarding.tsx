@@ -19,6 +19,8 @@ const onboarding = () => {
     navigate(`/onboarding/${paramsNumber + 1}`)
   }
 
+  const currentOnboarding = dataDummy[paramsNumber - 1]
+
   return (
     <>
       <header>
@@ -31,14 +33,12 @@ const onboarding = () => {
         </div>
         <div className='text-center font-MICEGothc'>
           <h2 className='text-3xl pb-2'>
-            {dataDummy[paramsNumber - 1].title[0]}{' '}
-            <span className='text-yellow-500 font-bold'>
-              {dataDummy[paramsNumber - 1].title[1]}
-            </span>
+            {currentOnboarding.title[0]}{' '}
+            <span className='text-yellow-500 font-bold'>{currentOnboarding.title[1]}</span>
           </h2>
-          <p className='text-gray-500 pb-10'>{dataDummy[paramsNumber - 1].content}</p>
+          <p className='text-gray-500 pb-10'>{currentOnboarding.content}</p>
         </div>
-        {dataDummy[paramsNumber - 1].animate}
+        {currentOnboarding.animate}
         <NextButton active={true} onClick={goNextPage} />
       </main>
     </>
