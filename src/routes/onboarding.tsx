@@ -3,6 +3,7 @@ import dataDummy from '../onboardingDummyData'
 import { useNavigate, useParams } from 'react-router-dom'
 import Pagination from '../components/Pagination'
 import NextButton from '../components/NextButton'
+import Image from '../components/Image'
 
 const onboarding = () => {
   const { id } = useParams()
@@ -21,11 +22,10 @@ const onboarding = () => {
   return (
     <>
       <header>
-        <img src={header} />
+        <Image src={header} height={52} width={360} alt={header} />
       </header>
       <main className='flex flex-col  h-full items-center'>
-        <div className='text-right flex justify-end w-full px-4'>
-        </div>
+        <div className='text-right flex justify-end w-full px-4'></div>
         <div className='px-4 py-4 relative flex w-full justify-center'>
           <Pagination size={6} activeNumber={paramsNumber} />
         </div>

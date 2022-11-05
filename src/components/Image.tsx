@@ -10,16 +10,7 @@ interface ImageProps {
 
 const Image = ({ src, alt, height, width, className }: ImageProps) => {
   return (
-    <img
-      src={src}
-      alt={alt}
-      height={height}
-      width={width}
-      className={className}
-      loading='lazy'
-      decoding='async'
-      
-    />
+    <img src={src} alt={alt} height={height} width={width} className={className} decoding='async' />
   )
 }
 
