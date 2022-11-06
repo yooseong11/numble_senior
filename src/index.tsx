@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const App = lazy(() => import('./App'))
 const Onboarding = lazy(() => import('./routes/onboarding'))
-const Splash = lazy(() => import('./routes/splash'))
+const SkipOrStart = lazy(() => import('./routes/skipOrStart'))
 const ErrorPage = lazy(() => import('./routes/error'))
 
 const router = createBrowserRouter([
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
         element: <Onboarding />,
       },
       {
-        path: '/splash',
-        element: <Splash />,
+        path: '/skipOrStart',
+        element: <SkipOrStart />,
       },
     ],
   },
