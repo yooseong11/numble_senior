@@ -19,15 +19,8 @@ code {
 @font-face {
   font-family: 'MICEGothic';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2')
-    format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MICEGothic';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2')
-    format('woff2');
+      format('woff2'),
+    url('./fonts/MICEGothic-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
@@ -35,7 +28,8 @@ code {
 @font-face {
   font-family: 'MICEGothic';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic.woff2')
-    format('woff2');
+      format('woff2'),
+    url('./fonts/MICEGothic.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }

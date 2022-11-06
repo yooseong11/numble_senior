@@ -15,7 +15,7 @@ function App() {
       <div className='flex justify-center items-center'>
         <div
           id='screen'
-          className=' bg-white h-[46rem] w-[22.5rem] relative rounded-lg shadow-2xl overflow-hidden'
+          className='bg-white h-screen sm:h-[46rem] w-full sm:w-[22.5rem] relative rounded-lg shadow-2xl overflow-hidden'
         >
           <Suspense fallback={<Spinner />}>
             <Outlet />
