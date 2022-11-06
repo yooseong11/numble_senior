@@ -46,7 +46,7 @@ const onboadringDataList: onboadringPageProps[] = [
   {
     id: 6,
     title: ['일자리', '찾기'],
-    content: '내 생활에 맞게 삶의 질을 높여줄 카드',
+    content: '생활비 마련, 은퇴 후 삶 걱정 해결 ',
     animate: <Onboarding6 />,
   },
 ]
