@@ -7,7 +7,7 @@ const skipOrStart = () => {
   }
 
   return (
-    <div className='py-72 text-center font-NotoSans'>
+    <div className='py-64 text-center font-NotoSans'>
       <div className='px-4 mb-12'>
         <h2 className='text-2xl font-bold'>시니어를 위한 1분 앱 설명서</h2>
         <p>
