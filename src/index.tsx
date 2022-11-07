@@ -5,9 +5,10 @@ import reportWebVitals from './reportWebVitals'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const App = lazy(() => import('./App'))
-const Onboarding = lazy(() => import('./routes/onboarding'))
-const SkipOrStart = lazy(() => import('./routes/skipOrStart'))
+const OnboardingPage = lazy(() => import('./routes/onboarding'))
+const SkipOrStartPage = lazy(() => import('./routes/skipOrStart'))
 const ErrorPage = lazy(() => import('./routes/error'))
+const MainPage = lazy(() => import('./routes/main'))
 
 const router = createBrowserRouter([
   {
@@ -17,11 +18,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/onboarding/:id',
-        element: <Onboarding />,
+        element: <OnboardingPage />,
       },
       {
         path: '/skipOrStart',
-        element: <SkipOrStart />,
+        element: <SkipOrStartPage />,
+      },
+      {
+        path: '/main',
+        element: <MainPage />,
       },
     ],
   },

@@ -2,6 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import Spinner from './components/Spinner'
 import { Suspense } from 'react'
 import Splash from './components/Splash'
+import Header from './components/Header'
 
 function App() {
   const location = useLocation()
@@ -14,6 +15,7 @@ function App() {
           id='screen'
           className='bg-white h-screen sm:h-[46rem] w-full sm:w-[22.5rem] relative rounded-lg shadow-2xl overflow-hidden'
         >
+          <Header />
           <Suspense fallback={<Spinner />}>
             <Outlet />
           </Suspense>

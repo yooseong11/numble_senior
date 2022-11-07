@@ -10,7 +10,8 @@ const Header = () => {
   }, [])
 
   const hours = date.getHours()
-  const minutes = date.getMinutes()
+  // 0-9 숫자 00,01 로 반환
+  const minutes = date.getMinutes().toString().padStart(2,'0')
 
   return (
     <header className='h-[3.25rem] p-4 font-NotoSans flex justify-between'>

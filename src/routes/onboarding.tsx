@@ -12,7 +12,7 @@ const onboarding = () => {
   const goNextPage = () => {
     const nextPageParam = paramsNumber + 1
     if (nextPageParam > dataDummy.length) {
-      alert('마지막 페이지입니다.')
+      navigate('/main')
       return
     }
     navigate(`/onboarding/${paramsNumber + 1}`)
@@ -22,7 +22,6 @@ const onboarding = () => {
 
   return (
     <>
-      <Header />
       <main className='flex flex-col  h-full items-center'>
         <div className='text-right flex justify-end w-full px-4'></div>
         <div className='px-4 py-4 relative flex w-full justify-center'>
