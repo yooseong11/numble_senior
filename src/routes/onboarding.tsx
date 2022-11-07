@@ -2,7 +2,6 @@ import dataDummy from '../onboardingDummyData'
 import { useNavigate, useParams } from 'react-router-dom'
 import Pagination from '../components/Pagination'
 import NextButton from '../components/NextButton'
-import Header from '../components/Header'
 
 const onboarding = () => {
   const { id } = useParams()
