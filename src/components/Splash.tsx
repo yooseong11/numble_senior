@@ -1,20 +1,9 @@
 import splashImg from '../image/splash.webp'
 import kbImg from '../image/kb.webp'
 import { useNavigate } from 'react-router-dom'
-import { useEffect } from 'react'
 
 const Splash = () => {
   const navigate = useNavigate()
-
-  useEffect(() => {
-    // 3초 뒤에 자동으로 다음 페이지로
-    const AutoGoToNextPage = () => {
-      setTimeout(() => {
-        goToOnboardingPage()
-      }, 3000)
-    }
-    AutoGoToNextPage()
-  }, [])
 
   const goToOnboardingPage = () => {
     navigate('/skipOrStart')
