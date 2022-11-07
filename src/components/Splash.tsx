@@ -2,11 +2,11 @@ import splashImg from '../image/splash.webp'
 import kbImg from '../image/kb.webp'
 import { useNavigate } from 'react-router-dom'
 
-const splash = () => {
+const Splash = () => {
   const navigate = useNavigate()
 
   const goToOnboardingPage = () => {
-    navigate('/onboarding/1')
+    navigate('/skipOrStart')
   }
 
   return (
@@ -28,4 +28,4 @@ const splash = () => {
   )
 }
 
-export default splash
+export default Splash
