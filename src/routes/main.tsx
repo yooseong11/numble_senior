@@ -1,8 +1,9 @@
-import React from 'react'
+import Image from '../components/Image'
+import dummyImage from '../image/mainPage.jpg'
 
 const main = () => {
 	return (
-		<div>main</div>
+		<><Image src={dummyImage} alt="fakeMainPage" width={360} height={660} /></>
 	)
 }
 
