@@ -11,11 +11,11 @@ const Header = () => {
 
   const hours = date.getHours()
   // 0-9 숫자 00,01 로 반환
-  const minutes = date.getMinutes().toString().padStart(2,'0')
+  const minutes = date.getMinutes().toString().padStart(2, '0')
 
   return (
     <header className='h-[3.25rem] p-4 font-NotoSans flex justify-between'>
-      <div>{`${hours} : ${minutes}`}</div>
+      <div className='font-roboto'>{`${hours} : ${minutes}`}</div>
       <Image src={icons} alt='phoneIcons' width={46} height={17} />
     </header>
   )
