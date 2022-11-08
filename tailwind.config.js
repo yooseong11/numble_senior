@@ -40,6 +40,7 @@ module.exports = {
     fontFamily: {
       MICEGothc: ['MICEGothic', 'serif'],
       NotoSans: ['Noto Sans KR', 'sans-serif'],
+      roboto: ['Roboto', 'sans-serif'],
     },
     extend: {
       borderRadius: {
@@ -112,7 +113,7 @@ module.exports = {
           '100%': { transform: 'translateX(-60%)' },
         },
         moveRight: {
-          '100%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(150%)' },
         },
       },
     },

@@ -21,15 +21,9 @@ const Onboarding3 = () => {
             alt='img'
             width={190}
             height={270}
-            className='ml-8 mr-8 scale-110 animate-scaleDown'
+            className='ml-8 mr-8 animate-scaleDown'
           />
-          <Image
-            src={Img4}
-            alt='img'
-            width={190}
-            height={270}
-            className='mr-8 animate-scaleUp animate-slideUp'
-          />
+          <Image src={Img4} alt='img' width={190} height={270} className='mr-8 animate-scaleUp' />
           <Image src={Img3} alt='img' width={190} height={270} className='mr-8' />
         </div>
         <div className='bg-white w-44 h-0.5 mb-6 relative '>
