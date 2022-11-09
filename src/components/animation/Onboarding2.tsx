@@ -1,7 +1,7 @@
-import CellPhoneImage from '../image/onboarding_2_1.webp'
-import slideUpImg from '../image/onboarding_2_2.webp'
-import BlinkAnimation from './BlinkAnimation'
-import Image from './Image'
+import CellPhoneImage from '@/image/onboarding_2_1.webp'
+import slideUpImg from '@/image/onboarding_2_2.webp'
+import BlinkAnimation from '@/components/animation/BlinkAnimation'
+import Image from '@/components/Image'
 
 const Onboarding2 = () => {
   return (

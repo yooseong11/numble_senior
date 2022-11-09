@@ -1,8 +1,9 @@
-import CellPhoneImage from '../image/onboarding_1_1.webp'
-import bankImg from '../image/onboarding_1_2.webp'
 import Typewriter from 'typewriter-effect'
-import Image from './Image'
-import BlinkAnimation from './BlinkAnimation'
+
+import CellPhoneImage from '@/image/onboarding_1_1.webp'
+import bankImg from '@/image/onboarding_1_2.webp'
+import Image from '@/components/Image'
+import BlinkAnimation from '@/components/animation/BlinkAnimation'
 
 const Onboarding1 = () => {
   return (

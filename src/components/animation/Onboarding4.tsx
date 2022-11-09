@@ -1,8 +1,8 @@
-import CellPhoneImage from '../image/onboarding_4_1.webp'
-import Img2 from '../image/onboarding_4_2.webp'
-import Img3 from '../image/onboarding_4_3.webp'
-import Img4 from '../image/onboarding_4_4.webp'
-import Image from './Image'
+import CellPhoneImage from '@/image/onboarding_4_1.webp'
+import Img2 from '@/image/onboarding_4_2.webp'
+import Img3 from '@/image/onboarding_4_3.webp'
+import Img4 from '@/image/onboarding_4_4.webp'
+import Image from '@/components/Image'
 
 const Onboarding3 = () => {
   return (

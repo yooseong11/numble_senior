@@ -1,6 +1,6 @@
-import CellPhoneImage from '../image/onboarding_3_1.webp'
-import slideUpImg from '../image/onboarding_3_2.webp'
-import Image from './Image'
+import CellPhoneImage from '@/image/onboarding_3_1.webp'
+import slideUpImg from '@/image/onboarding_3_2.webp'
+import Image from '@/components/Image'
 
 const Onboarding3 = () => {
   return (
