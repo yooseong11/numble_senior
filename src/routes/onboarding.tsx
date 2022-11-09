@@ -1,4 +1,4 @@
-import dataDummy from '@/onboardingDummyData'
+import dummyData from '@/onboardingDummyData'
 import { useNavigate, useParams } from 'react-router-dom'
 import Pagination from '@/components/Pagination'
 import NextButton from '@/components/NextButton'
@@ -12,19 +12,19 @@ const onboarding = () => {
 
   const goNextPage = () => {
     const nextPageParam = paramsNumber + 1
-    if (nextPageParam > dataDummy.length) {
+    if (nextPageParam > dummyData.length) {
       navigate(BROWSER_PATH.MAIN)
       return
     }
     navigate(`${BROWSER_PATH.ONBOARDING}/${nextPageParam}`)
   }
 
-  const currentOnboarding = dataDummy[paramsNumber - 1]
+  const currentOnboarding = dummyData[paramsNumber - 1]
 
   return (
     <>
       <main className='flex flex-col  h-full items-center'>
-        <Pagination size={6} activeNumber={paramsNumber} />
+        <Pagination size={dummyData.length} activeNumber={paramsNumber} />
         <OnboardingImageSection
           title={currentOnboarding.title}
           content={currentOnboarding.content}
