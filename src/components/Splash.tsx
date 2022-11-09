@@ -12,7 +12,7 @@ const Splash = () => {
 
   return (
     <div
-      className='flex flex-col items-center font-MICEGothc py-20 px-16'
+      className='flex flex-col items-center font-MICEGothc py-10 px-16'
       onClick={goToOnboardingPage}
     >
       <div className='text-center'>
