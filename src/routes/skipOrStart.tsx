@@ -1,13 +1,14 @@
+import { BROWSER_PATH } from '@/constants/path'
 import { useNavigate } from 'react-router-dom'
 
 const skipOrStart = () => {
   const navigate = useNavigate()
 
   const goOnboardingPage = () => {
-    navigate('/onboarding/1')
+    navigate(`${BROWSER_PATH.ONBOARDING}/1`)
   }
   const goMainPage = () => {
-    navigate('/main')
+    navigate(BROWSER_PATH.MAIN)
   }
 
   return (

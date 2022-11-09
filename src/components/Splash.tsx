@@ -1,12 +1,13 @@
-import splashImg from '../image/splash.webp'
-import kbImg from '../image/kb.webp'
+import splashImg from '@/image/splash.webp'
+import kbImg from '@/image/kb.webp'
+import { BROWSER_PATH } from '@/constants/path'
 import { useNavigate } from 'react-router-dom'
 
 const Splash = () => {
   const navigate = useNavigate()
 
   const goToOnboardingPage = () => {
-    navigate('/skipOrStart')
+  navigate(BROWSER_PATH.SKIPORSTART)
   }
 
   return (

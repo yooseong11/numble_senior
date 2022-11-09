@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { BROWSER_PATH } from './constants/path'
 
 const App = lazy(() => import('./App'))
 const OnboardingPage = lazy(() => import('./routes/onboarding'))
@@ -17,15 +18,15 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/onboarding/:id',
+        path: `${BROWSER_PATH}/:id`,
         element: <OnboardingPage />,
       },
       {
-        path: '/skipOrStart',
+        path: BROWSER_PATH.SKIPORSTART,
         element: <SkipOrStartPage />,
       },
       {
-        path: '/main',
+        path: BROWSER_PATH.MAIN,
         element: <MainPage />,
       },
     ],
