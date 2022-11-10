@@ -8,6 +8,27 @@ import { IMAGE_SIZE } from '@/constants/Image'
 const Onboarding3 = () => {
   const CARD_IMAGE_WIDTH = 220
 
+  const cardList = [
+    {
+      image: Card1,
+      content: 'kb 금융 전문 상담가',
+      animation: 'animate-slideRight',
+      position: 'ml-10'
+    },
+    {
+      image: Card2,
+      content: '맞춤형 은퇴 자산설계',
+      animation: 'animate-slideLeft-delay0.5s',
+      position: 'ml-20 mt-4'
+    },
+    {
+      image: Card3,
+      content: '나만을 위한 건강비서',
+      animation: 'animate-slideRight-delay1s',
+      position: 'ml-9 mt-4'
+    },
+  ]
+
   return (
     <div className='relative'>
       <Image
@@ -17,25 +38,15 @@ const Onboarding3 = () => {
         className='m-auto'
       />
 
-      <div className='absolute bottom-64 translate-y-1/2 w-[360px] -right-[34px] overflow-hidden '>
-        <Image
-          width={CARD_IMAGE_WIDTH}
-          src={Card1}
-          alt='kb 금융 전문가 상담'
-          className='animate-slideRight drop-shadow-card ml-10 mt-12'
-        />
-        <Image
-          width={CARD_IMAGE_WIDTH}
-          src={Card2}
-          alt='맞춤형 은퇴 자산설계'
-          className='animate-slideLeft-delay0.5s drop-shadow-card ml-20 mt-4'
-        />
-        <Image
-          width={CARD_IMAGE_WIDTH}
-          src={Card3}
-          alt='나만을 위한 건강비서'
-          className='animate-slideRight-delay1s drop-shadow-card ml-9 mt-4 pb-8'
-        />
+      <div className='absolute bottom-[15.5rem] translate-y-1/2 w-[360px] -right-[34px] overflow-hidden '>
+        {cardList.map((card) => (
+          <Image width={CARD_IMAGE_WIDTH}
+            src={card.image}
+            key={card.content}
+            alt={card.content}
+            className={`drop-shadow-card ${card.animation} ${card.position}`}
+          />
+        ))}
       </div>
     </div>
   )

@@ -36,6 +36,7 @@ const Onboarding3 = () => {
       />
 
       <ul className='absolute right-1/2 translate-x-1/2 bottom-36 z-10 w-[220px] h-[60px] px-4 font-MICEGothc'>
+
         {PopUpImageList.map((popUpImage) => (
           <li
             key={popUpImage.text}
@@ -45,6 +46,7 @@ const Onboarding3 = () => {
             <p className='text-base pl-3'>{popUpImage.text}</p>
           </li>
         ))}
+        
       </ul>
     </div>
   )

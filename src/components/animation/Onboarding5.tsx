@@ -37,7 +37,7 @@ const Onboarding3 = () => {
     <div className='relative'>
       <Image src={CellPhoneImage} alt='CellPhoneImage' width={360} className='m-auto' />
 
-      <div className='carousel absolute bottom-56 translate-y-1/2 flex flex-col items-center'>
+      <div className='absolute bottom-56 translate-y-1/2 flex flex-col items-center'>
         <div className='flex animate-carouselSlideLeft pb-4 ml-4'>
           {CardList.map((card) => (
             <Image
