@@ -3,8 +3,8 @@ import React from 'react'
 interface ImageProps {
   src: string
   alt: string
-  height: number
-  width: number
+  height?: number
+  width?: number
   className?: string
 }
 

@@ -1,18 +1,18 @@
-import Onboarding1 from './components/Onboarding1'
-import Onboarding2 from './components/Onboarding2'
-import Onboarding3 from './components/Onboarding3'
-import Onboarding4 from './components/Onboarding4'
-import Onboarding5 from './components/Onboarding5'
-import Onboarding6 from './components/Onboarding6'
+import Onboarding1 from '@/components/animation/Onboarding1'
+import Onboarding2 from '@/components/animation/Onboarding2'
+import Onboarding3 from '@/components/animation/Onboarding3'
+import Onboarding4 from '@/components/animation/Onboarding4'
+import Onboarding5 from '@/components/animation/Onboarding5'
+import Onboarding6 from '@/components/animation/Onboarding6'
 
-interface onboadringPageProps {
-  id: number
+export interface OnboadringPageProps {
+  id?: number
   title: string[]
   content: string
   animate: JSX.Element
 }
 
-const onboadringDataList: onboadringPageProps[] = [
+const onboadringDataList: OnboadringPageProps[] = [
   {
     id: 1,
     title: ['편리한', '송금'],

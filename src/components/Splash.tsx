@@ -1,17 +1,18 @@
-import splashImg from '../image/splash.webp'
-import kbImg from '../image/kb.webp'
+import splashImg from '@/image/splash.webp'
+import kbImg from '@/image/kb.webp'
+import { BROWSER_PATH } from '@/constants/path'
 import { useNavigate } from 'react-router-dom'
 
 const Splash = () => {
   const navigate = useNavigate()
 
   const goToOnboardingPage = () => {
-    navigate('/skipOrStart')
+  navigate(BROWSER_PATH.SKIPORSTART)
   }
 
   return (
     <div
-      className='flex flex-col items-center font-MICEGothc py-20 px-16'
+      className='flex flex-col items-center font-MICEGothc py-10 px-16'
       onClick={goToOnboardingPage}
     >
       <div className='text-center'>

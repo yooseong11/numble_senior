@@ -1,0 +1,5 @@
+const IMAGE_SIZE = {
+	DEFAULT_CELLPHONE_IMAGE_WIDTH: 290,
+}
+
+export { IMAGE_SIZE };
