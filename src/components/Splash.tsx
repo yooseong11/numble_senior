@@ -2,10 +2,19 @@ import splashImg from '@/image/splash.webp'
 import kbImg from '@/image/kb.webp'
 import { BROWSER_PATH } from '@/constants/path'
 import { useNavigate } from 'react-router-dom'
+import {useEffect} from 'react'
 
 const Splash = () => {
   const navigate = useNavigate()
 
+  useEffect(() => {
+    const timeout = setTimeout(() => 
+      navigate(BROWSER_PATH.SKIPORSTART)
+    , 2000);
+    return () => clearTimeout(timeout);
+  }, [])
+
+  
   const goToOnboardingPage = () => {
   navigate(BROWSER_PATH.SKIPORSTART)
   }
