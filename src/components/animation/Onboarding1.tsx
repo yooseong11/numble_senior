@@ -15,7 +15,6 @@ const Onboarding1 = () => {
         src={CellPhoneImage}
         alt='bg-CellPhoneImage'
         width={IMAGE_SIZE.DEFAULT_CELLPHONE_IMAGE_WIDTH}
-        className='m-auto'
       />
 
       <div className='font-NotoSan absolute top-56 left-12 text-sm'>
@@ -32,7 +31,7 @@ const Onboarding1 = () => {
           }}
         />
       </div>
-      
+
       <div className='absolute flex top-[17.5rem] z-10 p-0'>
         <BlinkAnimation />
         <Image

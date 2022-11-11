@@ -6,6 +6,7 @@ import Image from '@/components/Image'
 
 const Onboarding3 = () => {
   const CARD_IMAGE_WIDTH = 190
+  const CELLPHONE_IMAGE_WIDHT = 360
 
   const CardList = [
     {
@@ -35,7 +36,7 @@ const Onboarding3 = () => {
 
   return (
     <div className='relative'>
-      <Image src={CellPhoneImage} alt='CellPhoneImage' width={360} className='m-auto' />
+      <Image src={CellPhoneImage} alt='CellPhoneImage' width={CELLPHONE_IMAGE_WIDHT} />
 
       <div className='absolute bottom-56 translate-y-1/2 flex flex-col items-center'>
         <div className='flex animate-carouselSlideLeft pb-4 ml-4'>

@@ -12,7 +12,7 @@ const Onboarding3 = () => {
         width={IMAGE_SIZE.DEFAULT_CELLPHONE_IMAGE_WIDTH}
         src={CellPhoneImage}
         alt='CellPhoneImage'
-        className='m-auto animate-darker'
+        className='animate-darker'
       />
       <Image
         width={SLDIEUP_IMAGE_WIDTH}
