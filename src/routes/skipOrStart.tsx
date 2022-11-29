@@ -21,13 +21,13 @@ const skipOrStart = () => {
       </div>
       <div className='px-4'>
         <button
-          className='p-4 bg-yellow-300 hover:bg-yellow-500 rounded-xl bloc w-full'
+          className='startButton p-4 bg-yellow-300 hover:bg-yellow-500 rounded-xl bloc w-full'
           onClick={goOnboardingPage}
         >
           시작하기
         </button>
         <button
-          className='p-4 mt-4 bg-gray-300 hover:bg-gray-400 rounded-xl block w-full'
+          className='skipButton p-4 mt-4 bg-gray-300 hover:bg-gray-400 rounded-xl block w-full'
           onClick={goMainPage}
         >
           Skip하기

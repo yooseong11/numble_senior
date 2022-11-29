@@ -13,3 +13,19 @@ describe('"/" index page', () => {
 		cy.location('pathname').should('include', '/skipOrStart');
 	})
 })
+
+describe('"/skipOrStart" page', () => {
+	beforeEach(() => {
+		cy.visit('http://127.0.0.1:5173/skipOrStart')
+	})
+
+	it('시작 버튼을 클릭하면 온보딩 페이지로 넘어간다', () => {
+		cy.get('.startButton').click();
+		cy.location('pathname').should('include', '/onboarding/1');
+	})
+
+	it('스킵 버튼을 클릭하면 메인 페이지로 넘어간다', () => {
+		cy.get('.skipButton').click();
+		cy.location('pathname').should('include', '/main');
+	})
+})
