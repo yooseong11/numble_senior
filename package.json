@@ -20,7 +20,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "cypress": "npx cypress open"
   },
   "eslintConfig": {
     "extends": [
