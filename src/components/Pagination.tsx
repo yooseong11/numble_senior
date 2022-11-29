@@ -12,16 +12,16 @@ const Pagination = ({ size, activeNumber }: PaginationProps) => {
   }
 
   return (
-    <div className='flex p-4'>
+    <ul className='pagenation flex p-4'>
       {pages.map((currentPage) => (
-        <div
+        <li
           key={currentPage}
           className={
             'rounded-full h-[0.375rem] m-[0.188rem] ' + (ActivePageStyle(currentPage))
           }
         />
       ))}
-    </div>
+    </ul>
   )
 }
 
