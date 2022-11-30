@@ -12,9 +12,10 @@ const Pagination = ({ size, activeNumber }: PaginationProps) => {
       {pages.map((currentPage) => (
         <li
           key={currentPage}
-          className={
-            classJoin('rounded-full h-[0.375rem] m-[0.188rem]', currentPage === activeNumber ? 'bg-gray-400 w-[1.125rem]' : 'bg-gray-350 w-[0.375rem]')
-          }
+          className={classJoin(
+            'rounded-full h-[0.375rem] m-[0.188rem]',
+            currentPage === activeNumber ? 'bg-gray-400 w-[1.125rem]' : 'bg-gray-350 w-[0.375rem]',
+          )}
         />
       ))}
     </ul>
